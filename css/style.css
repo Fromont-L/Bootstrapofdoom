@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+@import url(https://fr.allfont.net/allfont.css?fonts=garamond-bold);
+
+@font-face {
+  	font-family: myFirstFont;
+  	src: url('../font/garamond-bold.ttf');
+}
+
+#font {
+  	font-family: myFirstFont;
+}
+
+.carousel-caption {
+	margin-bottom: 20%;
+}
+
+body {
+	background-image: url('../images/background/fond.jpg');
+	background-size: 100%;
+}
+
+.navfont {
+	font-size: 2rem;
+	margin-right: 3rem;
+}
+
+/*.card-img-top {
+	max-height: 175px; 
+	max-width: 220px;
+}*/
+
+/*.gammes {
+	display: flex;
+	max-height: 350px;
+	max-width: 220px;
+	min-height: auto;
+	min-width: auto;
+}*/
+
+/*Boîte grise dans carousel*/
+
+.caroubox {
+	height: auto;
+	width: auto;
+	background-color: #00000070;
+}
+
+/*Lignes de séparation*/
+
+hr {
+ 	margin-top: 1rem;
+ 	margin-bottom: 1rem;
+ 	border: 0;
+	border-top: 3px solid rgba(223, 203, 0, 1);
+}
+
+/*Texte pour titre dans carousel*/
+
+.display1 {
+	font-size: 3.5em;
+}
+
+/*Texte pour texte dans carousel*/
+
+.display2 {
+	font-size: 1.1em;
+}
+
+/*Images mafia*/
+
+.mafia {
+	background: transparent;
+}
+
+.rounded {
+	border-radius: auto;
+  	background: transparent;
+  	padding: auto;
+  	width: 150px;
+  	height: 150px;
+  	clip-path:ellipse(50% 50%);
+}
+
+#boutonhistoire {
+}
+
+/*Accordéon*/
+
+.categorieaccordeon{
+	margin-left: 15%;
+	margin-right: 15%;
+	padding:10px;
+	background-color: #DFCB00;
+	border:1px solid black;
+	border-radius: 10px;
+}
+
+.categorieaccordeon:hover{
+	background-color: #CFB800;
+}
+
+.texteaccordeon{
+  color: black;
+	background-color: white;
+	border-radius: 10px;
+	letter-spacing: 0.2em;
+	word-spacing: 0.1em;
+	margin-right:15%;
+	margin-left: 15%;
+	font-size: 0.9em;
+	padding:10px;
+}
+
+.accordeon{
+	margin-bottom:5%;
+	margin-top:5%;
+}
+
+/*Icones du footer*/
+
+/*
+.footer-icon {
+	height: 50px;
+	width: 50px;
+}
+*/
+
+/* FOOTER */
+footer
+{
+  background-color: white;
+  margin: 0;
+}
+.sitefooter
+{
+  margin-top:10%;
+	margin-bottom: 10%;
+	border:none;
+}
+.info-footer
+{
+width: 25%;
+}
+.titrefooter{
+	font-size:1.8em;
+	text-align: center;
+}
+
+/*ADRESSE*/
+
+.card {
+   border: none;
+}
+
+.logofooter{
+	width: 17em;
+	height: auto;
+	align-self: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.textfooter{
+	word-spacing: 0.1em;
+	letter-spacing: 0.2em;
+	font-size: 1.2em;
+}
+.tel{
+	margin-bottom: 10%;
+	margin-top:5%;
+}
+}
+.social
+
+.icone
+{
+	margin-left:3%;
+}
+/*RESEAUX*/
+.iconeRS{
+	height:2.7em;
+	width: auto;
+	margin-left: 5px;
+	margin:2%;
+}
+.iconeRS:hover{
+	opacity: 0.8;
+	cursor: pointer;
+}
+/*FORMULAIRE*/
+.form-control
+{
+  border-radius: 10px;
+  border: solid black 1px;
+  background: #E3E3E3;
+  cursor:text;
+}
+.formulaire
+{
+margin:10px auto;
+width: 300px;
+padding: 20px 12px 10px 20px;
+word-spacing: 0.1em;
+letter-spacing: 0.2em;
+}
+
+/*GOOGLE MAP*/
+.mapsection{
+	align-items: center;
+}
+.map{
+	height:20em;
+	width: 20em;
+	text-align: center;
+	margin-top: 8%;
+}
+
+/*MENTIONS LEGALE*/
+.mentions{
+	letter-spacing: 0.2em;
+	word-spacing: 0.1em;
+	font-size: 0.9em;
+}
