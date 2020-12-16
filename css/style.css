@@ -20,6 +20,11 @@ body {
 	background-size: 100%;
 }
 
+.navbar {
+	border-bottom: solid #DFCB00 5px;
+
+}
+
 .navfont {
 	font-size: 2rem;
 	margin-right: 3rem;
@@ -44,6 +49,21 @@ body {
 	height: auto;
 	width: auto;
 	background-color: #00000070;
+	margin-bottom: 10%;
+}
+
+/*Flèches du carousel*/
+
+.carousel-control-prev-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+	height: 75px;
+	width: 75px;
+}
+
+.carousel-control-next-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+	height: 75px;
+	width: 75px;
 }
 
 /*Lignes de séparation*/
@@ -67,6 +87,8 @@ hr {
 	font-size: 1.1em;
 }
 
+/*Cartes*/
+
 /*Images mafia*/
 
 .mafia {
@@ -77,17 +99,32 @@ hr {
 	border-radius: auto;
   	background: transparent;
   	padding: auto;
-  	width: 150px;
+  	width: 200px;
   	height: 150px;
-  	clip-path:ellipse(50% 50%);
+  	clip-path:ellipse(37% 50%);
 }
 
-#boutonhistoire {
+/*Texte Origines & Infrastructure*/
+
+strong {
+	font-size: 2em;
+	letter-spacing: 0.1em;
+	word-spacing: 0.2em;
+}
+
+.texteinfrastructure {
+	font-size: 1em;
+	letter-spacing: 0.1em
+	word-spacing: 0.2em;
 }
 
 /*Accordéon*/
 
-.categorieaccordeon{
+.panel-title {
+	color: black;
+}
+
+.categorieaccordeon {
 	margin-left: 15%;
 	margin-right: 15%;
 	padding:10px;
@@ -96,12 +133,12 @@ hr {
 	border-radius: 10px;
 }
 
-.categorieaccordeon:hover{
+.categorieaccordeon:hover {
 	background-color: #CFB800;
 }
 
-.texteaccordeon{
-  color: black;
+.texteaccordeon {
+  	color: black;
 	background-color: white;
 	border-radius: 10px;
 	letter-spacing: 0.2em;
@@ -112,71 +149,55 @@ hr {
 	padding:10px;
 }
 
-.accordeon{
+.accordeon {
 	margin-bottom:5%;
 	margin-top:5%;
 }
 
-/*Icones du footer*/
-
-/*
-.footer-icon {
-	height: 50px;
-	width: 50px;
-}
-*/
-
-/* FOOTER */
+/* Footer */
 footer
 {
-  background-color: white;
-  margin: 0;
+	background-color: white;
+	margin-top: 12px;
+	padding-top: 23px;
 }
 .sitefooter
 {
-  margin-top:10%;
-	margin-bottom: 10%;
+ 	margin-top:10%;
 	border:none;
 }
 .info-footer
 {
-width: 25%;
+	width: 25%;
 }
 .titrefooter{
 	font-size:1.8em;
 	text-align: center;
 }
 
-/*ADRESSE*/
+/*Adresse*/
 
 .card {
    border: none;
 }
 
-.logofooter{
-	width: 17em;
-	height: auto;
-	align-self: center;
-	margin-top: 5%;
-	margin-bottom: 5%;
+.picologo {
+
 }
-.textfooter{
+
+.adresstext {
+	font-size: 1.1em;
 	word-spacing: 0.1em;
 	letter-spacing: 0.2em;
-	font-size: 1.2em;
 }
-.tel{
-	margin-bottom: 10%;
-	margin-top:5%;
-}
-}
-.social
 
-.icone
-{
-	margin-left:3%;
+/*Réseaux*/
+
+.footer-icons {
+	display: inline-flex;
+	justify-content: space-around;
 }
-/*RESEAUX*/
+
 .iconeRS{
 	height:2.7em;
 	width: auto;
@@ -187,37 +208,61 @@ width: 25%;
 	opacity: 0.8;
 	cursor: pointer;
 }
-/*FORMULAIRE*/
+/*Formulaire*/
 .form-control
 {
-  border-radius: 10px;
-  border: solid black 1px;
-  background: #E3E3E3;
-  cursor:text;
+	border-radius: 10px;
+	border: solid black 1px;
+	background: #E3E3E3;
+	cursor:text;
 }
 .formulaire
 {
-margin:10px auto;
-width: 300px;
-padding: 20px 12px 10px 20px;
-word-spacing: 0.1em;
-letter-spacing: 0.2em;
+	margin:10px auto;
+	width: 300px;
+	padding: 20px 12px 10px 20px;
+	word-spacing: 0.1em;
+	letter-spacing: 0.2em;
 }
 
-/*GOOGLE MAP*/
-.mapsection{
+.submitbutton {
+
+	
+}
+
+/*Google Map*/
+.mapsection {
 	align-items: center;
 }
-.map{
+
+.map-responsive {
+	overflow: hidden;
+	padding-right: auto;
+	padding-bottom: 76.25%;
+	position: relative;
+	height: 0;
+}
+
+.map-responsive iframe {
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position: absolute;
+}
+
+/*.map {
 	height:20em;
 	width: 20em;
 	text-align: center;
 	margin-top: 8%;
-}
+}*/
 
-/*MENTIONS LEGALE*/
-.mentions{
+/*Mentions légales*/
+.legalmentions{
 	letter-spacing: 0.2em;
 	word-spacing: 0.1em;
 	font-size: 0.9em;
+	display: flex;
+	text-align: center;
 }

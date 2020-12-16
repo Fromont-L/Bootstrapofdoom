@@ -16,15 +16,15 @@
 
 	<body id="font">
 		<!--Navigation-->
-		<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+		<nav class="navbar navbar-expand-xl navbar-light bg-white fixed-top">
 			<a class="navbar-brand" href="index.html">
 				<img src="images/logo/logo.jpg" width="300" height="80">
 			</a>
-			<button class="navbar-toggler d-md-none p-0 ml-3 collapsed" type="button" data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler p-0 ml-3 collapsed" type="button" data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse ml-5 justify-content-end" id="navbar-nav">
-				<ul class="navbar-nav mr-auto">
+				<ul class="navbar-nav">
 					<li class="nav-item active">
 						<a class="nav-link" href="#"><strong class="navfont">Accueil</strong>
 							<span class="sr-only"></span>
@@ -39,7 +39,7 @@
 						</a>
 					</li>
 					<li class="nav-item active">
-						<a class="nav-link" href="index.html#contact"><strong class="navfont">Contact</strong>
+						<a class="nav-link" href="index.html#footer"><strong class="navfont">Contact</strong>
 						</a>
 					</li>
 				</ul>
@@ -52,40 +52,40 @@
 				<!--Carousel Image 1-->
 				<div class="carousel-item active">
 					<img class="d-block w-100" src="images/carousel/living-room.jpg" alt="première image">
-					<div class="carousel-caption d-none d-md-block">
+					<div class="carousel-caption d-md-block">
 						<div class="caroubox">
 						<h1 class="display1">Bienvenue</h1>
-						<p class="display2">Texte</p>
+						<p class="display2">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
 						</div>
 					</div>
 				</div>
 				<!--Carousel Image 2-->
 				<div class="carousel-item">
 					<img class="d-block w-100" src="images/carousel/home-office.jpg" alt="deuxième image">
-					<div class="carousel-caption d-none d-md-block">
+					<div class="carousel-caption d-md-block">
 						<div class="caroubox">
-						<h1 class="display1">Bienvenue</h1>
-						<p class="display2">Texte</p>
+						<h1 class="display1">Exclusivité</h1>
+						<p class="display2">Fusce velit nulla, maximus sit amet tincidunt in, venenatis vitae velit.</p>
 						</div>
 					</div>
 				</div>
 				<!--Carousel Image 3-->
 				<div class="carousel-item">
 					<img class="d-block w-100" src="images/carousel/chair.jpg" alt="troisième image">
-					<div class="carousel-caption d-none d-md-block">
+					<div class="carousel-caption d-md-block">
 						<div class="caroubox">
-						<h1 class="display1">Bienvenue</h1>
-						<p class="display2">Texte</p>
+						<h1 class="display1">Qualité</h1>
+						<p class="display2">Aenean eu gravida velit. Morbi molestie turpis ac lacinia varius.</p>
 						</div>
 					</div>
 				</div>
 				<!--Carousel Image 4-->
 				<div class="carousel-item">
 					<img class="d-block w-100" src="images/carousel/couch.jpg" alt="quatrième image">
-					<div class="carousel-caption d-none d-md-block">
+					<div class="carousel-caption d-md-block">
 						<div class="caroubox">
-						<h1 class="display1">Bienvenue</h1>
-						<p class="display2">Texte</p>
+						<h1 class="display1">N'hésitez plus</h1>
+						<p class="display2">Cras vel odio vitae orci consectetur tempor. Integer blandit mi nibh, ut tempus augue posuere sed.</p>
 						</div>
 					</div>
 				</div>
@@ -101,7 +101,7 @@
 		</div>
 		<!--Fin Carousel-->
 		<!--Gammes-->
-		<div class="container-fluid gammes-container">
+		<div id="gammes" class="container-fluid gammes-container">
 			<div class="row">
 				<div class="col my-5 d-flex flex-column">
 					<h1 class="title">Nos Gammes</h1>
@@ -110,208 +110,211 @@
 				</div>
 			</div>
 			<div class="row py-3">
-				<div class="col-md-3">
-					<div class="card shadow">
-						<img src="IMG1/1.jpg" alt="Image 1"
-						class="card-img-top"/>
+				<div class="col-md-3 col-sm-6">
+					<div class="card shadow mb-5">
+					<img src="IMG1/1.jpg" alt="Image 1"
+					class="card-img-top"/>
 						<div class="card-body">
 						<h5 class="card-title">Image 1</h5>
 						<p class="card-text">Bla bla bla, j'en passe etc</p>
 						<button type="button" data-toggle="modal" data-target="#infos" class="btn btn-warning">Lire la suite</button>
 							<div class="modal" id="infos">
-							  <div class="modal-dialog modal-lg">
-							    <div class="modal-content">
+							  	<div class="modal-dialog modal-lg">
+							    	<div class="modal-content">
 							    	<img src="IMG1/1.jpg" alt="Image 1" class="card-img-top"/>
-							      <div class="modal-header">
-							        <h4 class="modal-title">Notre meilleur canapé</h4>
-							      </div>
-							      <div class="modal-body">
-							        « Pour vous faire mieux connaitre d’où vient l’erreur de ceux qui blâment la volupté, et qui louent en quelque sorte la douleur, je vais entrer dans une explication plus étendue, et vous faire voir tout ce qui a été dit là-dessus par l’inventeur de la vérité, et, pour ainsi dire, par l’architecte de la vie heureuse.
+							      		<div class="modal-header">
+							        	<h4 class="modal-title">Notre meilleur canapé</h4>
+							        	<button type="button" class="close" data-dismiss="modal">
+						      			<span>&times;</span>
+						      			</button>
+							      		</div>
+							      		<div class="modal-body">
+					        			« Pour vous faire mieux connaitre d’où vient l’erreur de ceux qui blâment la volupté, et qui louent en quelque sorte la douleur, je vais entrer dans une explication plus étendue, et vous faire voir tout ce qui a été dit là-dessus par l’inventeur de la vérité, et, pour ainsi dire, par l’architecte de la vie heureuse.
 
-											Personne [dit Épicure] ne craint ni ne fuit la volupté en tant que volupté, mais en tant qu’elle attire de grandes douleurs à ceux qui ne savent pas en faire un usage modéré et raisonnable ; et personne n’aime ni ne recherche la douleur comme douleur, mais parce qu’il arrive quelquefois que, par le travail et par la peine, on parvienne à jouir d’une grande volupté. En effet, pour descendre jusqu’aux petites choses, qui de vous ne fait point quelque exercice pénible pour en retirer quelque sorte d’utilité ? Et qui pourrait justement blâmer, ou celui qui rechercherait une volupté qui ne pourrait être suivie de rien de fâcheux, ou celui qui éviterait une douleur dont il ne pourrait espérer aucun plaisir. »
-							      </div>
-							    </div>
-							  </div>
+										Personne [dit Épicure] ne craint ni ne fuit la volupté en tant que volupté, mais en tant qu’elle attire de grandes douleurs à ceux qui ne savent pas en faire un usage modéré et raisonnable ; et personne n’aime ni ne recherche la douleur comme douleur, mais parce qu’il arrive quelquefois que, par le travail et par la peine, on parvienne à jouir d’une grande volupté. En effet, pour descendre jusqu’aux petites choses, qui de vous ne fait point quelque exercice pénible pour en retirer quelque sorte d’utilité ? Et qui pourrait justement blâmer, ou celui qui rechercherait une volupté qui ne pourrait être suivie de rien de fâcheux, ou celui qui éviterait une douleur dont il ne pourrait espérer aucun plaisir. »
+							      		</div>
+							    	</div>
+							  	</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
-					<div class="card shadow">
-						<img src="IMG1/1.jpg" alt="Image 2"
-						class="card-img-top">
+				<div class="col-md-3 col-sm-6 mb-5">
+					<div class="card shadow mb-5">
+					<img src="IMG1/1.jpg" alt="Image 2"
+					class="card-img-top">
 						<div class="card-body">
 						<h5 class="card-title">Image 2</h5>
 						<p class="card-text">Bla bla bla, j'en passe etc</p>
 						<button type="button" data-toggle="modal" data-target="#infos" class="btn btn-warning">Lire la suite</button>
 							<div class="modal" id="infos">
-							  <div class="modal-dialog modal-lg">
-							    <div class="modal-content">
-							    	<img src="IMG1/1.jpg" alt="Image 1" class="card-img-top"/>
-							      <div class="modal-header">
-							        <h4 class="modal-title">Notre meilleur canapé</h4>
-							      </div>
-							      <div class="modal-body">
-							        « Pour vous faire mieux connaitre d’où vient l’erreur de ceux qui blâment la volupté, et qui louent en quelque sorte la douleur, je vais entrer dans une explication plus étendue, et vous faire voir tout ce qui a été dit là-dessus par l’inventeur de la vérité, et, pour ainsi dire, par l’architecte de la vie heureuse.
+							  	<div class="modal-dialog modal-lg">
+							    	<div class="modal-content">
+					    			<img src="IMG1/1.jpg" alt="Image 1" class="card-img-top"/>
+							      		<div class="modal-header">
+								        <h4 class="modal-title">Notre meilleur canapé</h4>
+								      	</div>
+								      	<div class="modal-body">
+								        « Pour vous faire mieux connaitre d’où vient l’erreur de ceux qui blâment la volupté, et qui louent en quelque sorte la douleur, je vais entrer dans une explication plus étendue, et vous faire voir tout ce qui a été dit là-dessus par l’inventeur de la vérité, et, pour ainsi dire, par l’architecte de la vie heureuse.
 
-											Personne [dit Épicure] ne craint ni ne fuit la volupté en tant que volupté, mais en tant qu’elle attire de grandes douleurs à ceux qui ne savent pas en faire un usage modéré et raisonnable ; et personne n’aime ni ne recherche la douleur comme douleur, mais parce qu’il arrive quelquefois que, par le travail et par la peine, on parvienne à jouir d’une grande volupté. En effet, pour descendre jusqu’aux petites choses, qui de vous ne fait point quelque exercice pénible pour en retirer quelque sorte d’utilité ? Et qui pourrait justement blâmer, ou celui qui rechercherait une volupté qui ne pourrait être suivie de rien de fâcheux, ou celui qui éviterait une douleur dont il ne pourrait espérer aucun plaisir. »
-							      </div>
-							    </div>
-							  </div>
+										Personne [dit Épicure] ne craint ni ne fuit la volupté en tant que volupté, mais en tant qu’elle attire de grandes douleurs à ceux qui ne savent pas en faire un usage modéré et raisonnable ; et personne n’aime ni ne recherche la douleur comme douleur, mais parce qu’il arrive quelquefois que, par le travail et par la peine, on parvienne à jouir d’une grande volupté. En effet, pour descendre jusqu’aux petites choses, qui de vous ne fait point quelque exercice pénible pour en retirer quelque sorte d’utilité ? Et qui pourrait justement blâmer, ou celui qui rechercherait une volupté qui ne pourrait être suivie de rien de fâcheux, ou celui qui éviterait une douleur dont il ne pourrait espérer aucun plaisir. »
+						    		  	</div>
+							    	</div>
+						  		</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
-					<div class="card shadow">
-						<img src="IMG1/1.jpg" alt="Image 3"
-						class="card-img-top">
+				<div class="col-md-3 col-sm-6">
+					<div class="card shadow mb-5">
+					<img src="IMG1/1.jpg" alt="Image 3"
+					class="card-img-top">
 						<div class="card-body">
 						<h5 class="card-title">Image 3</h5>
 						<p class="card-text">Bla bla bla, j'en passe etc</p>
 						<button type="button" data-toggle="modal" data-target="#infos" class="btn btn-warning">Lire la suite</button>
 							<div class="modal" id="infos">
-							  <div class="modal-dialog modal-lg">
-							    <div class="modal-content">
+							  	<div class="modal-dialog modal-lg">
+							    	<div class="modal-content">
 							    	<img src="IMG1/1.jpg" alt="Image 1" class="card-img-top"/>
-							      <div class="modal-header">
-							        <h4 class="modal-title">Notre meilleur canapé</h4>
-							      </div>
-							      <div class="modal-body">
-							        « Pour vous faire mieux connaitre d’où vient l’erreur de ceux qui blâment la volupté, et qui louent en quelque sorte la douleur, je vais entrer dans une explication plus étendue, et vous faire voir tout ce qui a été dit là-dessus par l’inventeur de la vérité, et, pour ainsi dire, par l’architecte de la vie heureuse.
+							      		<div class="modal-header">
+							        	<h4 class="modal-title">Notre meilleur canapé</h4>
+							      		</div>
+						      			<div class="modal-body">
+							        	« Pour vous faire mieux connaitre d’où vient l’erreur de ceux qui blâment la volupté, et qui louent en quelque sorte la douleur, je vais entrer dans une explication plus étendue, et vous faire voir tout ce qui a été dit là-dessus par l’inventeur de la vérité, et, pour ainsi dire, par l’architecte de la vie heureuse.
 
-											Personne [dit Épicure] ne craint ni ne fuit la volupté en tant que volupté, mais en tant qu’elle attire de grandes douleurs à ceux qui ne savent pas en faire un usage modéré et raisonnable ; et personne n’aime ni ne recherche la douleur comme douleur, mais parce qu’il arrive quelquefois que, par le travail et par la peine, on parvienne à jouir d’une grande volupté. En effet, pour descendre jusqu’aux petites choses, qui de vous ne fait point quelque exercice pénible pour en retirer quelque sorte d’utilité ? Et qui pourrait justement blâmer, ou celui qui rechercherait une volupté qui ne pourrait être suivie de rien de fâcheux, ou celui qui éviterait une douleur dont il ne pourrait espérer aucun plaisir. »
-							      </div>
-							    </div>
-							  </div>
+										Personne [dit Épicure] ne craint ni ne fuit la volupté en tant que volupté, mais en tant qu’elle attire de grandes douleurs à ceux qui ne savent pas en faire un usage modéré et raisonnable ; et personne n’aime ni ne recherche la douleur comme douleur, mais parce qu’il arrive quelquefois que, par le travail et par la peine, on parvienne à jouir d’une grande volupté. En effet, pour descendre jusqu’aux petites choses, qui de vous ne fait point quelque exercice pénible pour en retirer quelque sorte d’utilité ? Et qui pourrait justement blâmer, ou celui qui rechercherait une volupté qui ne pourrait être suivie de rien de fâcheux, ou celui qui éviterait une douleur dont il ne pourrait espérer aucun plaisir. »
+							      		</div>
+							    	</div>
+							  	</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6">
 					<div class="card shadow">
-						<img src="IMG1/1.jpg" alt="Image 4"
-						class="card-img-top">
+					<img src="IMG1/1.jpg" alt="Image 4"
+					class="card-img-top">
 						<div class="card-body">
 						<h5 class="card-title">Image 4</h5>
 						<p class="card-text">Bla bla bla, j'en passe etc</p>
 						<button type="button" data-toggle="modal" data-target="#infos" class="btn btn-warning">Lire la suite</button>
 							<div class="modal" id="infos">
-							  <div class="modal-dialog modal-lg">
-							    <div class="modal-content">
+							  	<div class="modal-dialog modal-lg">
+							    	<div class="modal-content">
 							    	<img src="IMG1/1.jpg" alt="Image 1" class="card-img-top"/>
-							      <div class="modal-header">
-							        <h4 class="modal-title">Notre meilleur canapé</h4>
-							      </div>
-							      <div class="modal-body">
-							        « Pour vous faire mieux connaitre d’où vient l’erreur de ceux qui blâment la volupté, et qui louent en quelque sorte la douleur, je vais entrer dans une explication plus étendue, et vous faire voir tout ce qui a été dit là-dessus par l’inventeur de la vérité, et, pour ainsi dire, par l’architecte de la vie heureuse.
+							      		<div class="modal-header">
+							        	<h4 class="modal-title">Notre meilleur canapé</h4>
+							      		</div>
+							      		<div class="modal-body">
+							        	« Pour vous faire mieux connaitre d’où vient l’erreur de ceux qui blâment la volupté, et qui louent en quelque sorte la douleur, je vais entrer dans une explication plus étendue, et vous faire voir tout ce qui a été dit là-dessus par l’inventeur de la vérité, et, pour ainsi dire, par l’architecte de la vie heureuse.
 
-											Personne [dit Épicure] ne craint ni ne fuit la volupté en tant que volupté, mais en tant qu’elle attire de grandes douleurs à ceux qui ne savent pas en faire un usage modéré et raisonnable ; et personne n’aime ni ne recherche la douleur comme douleur, mais parce qu’il arrive quelquefois que, par le travail et par la peine, on parvienne à jouir d’une grande volupté. En effet, pour descendre jusqu’aux petites choses, qui de vous ne fait point quelque exercice pénible pour en retirer quelque sorte d’utilité ? Et qui pourrait justement blâmer, ou celui qui rechercherait une volupté qui ne pourrait être suivie de rien de fâcheux, ou celui qui éviterait une douleur dont il ne pourrait espérer aucun plaisir. »
-							      </div>
-							    </div>
-							  </div>
+										Personne [dit Épicure] ne craint ni ne fuit la volupté en tant que volupté, mais en tant qu’elle attire de grandes douleurs à ceux qui ne savent pas en faire un usage modéré et raisonnable ; et personne n’aime ni ne recherche la douleur comme douleur, mais parce qu’il arrive quelquefois que, par le travail et par la peine, on parvienne à jouir d’une grande volupté. En effet, pour descendre jusqu’aux petites choses, qui de vous ne fait point quelque exercice pénible pour en retirer quelque sorte d’utilité ? Et qui pourrait justement blâmer, ou celui qui rechercherait une volupté qui ne pourrait être suivie de rien de fâcheux, ou celui qui éviterait une douleur dont il ne pourrait espérer aucun plaisir. »
+							      		</div>
+							    	</div>
+							  	</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row py-3">
-				<div class="col-md-3">
-					<div class="card shadow">
+				<div class="col-md-3 col-sm-6">
+					<div class="card shadow mb-5">
 						<img src="IMG1/1.jpg" alt="Image 5" class="card-img-top">
 						<div class="card-body">
 						<h5 class="card-title">Image 5</h5>
 						<p class="card-text">Bla bla bla, j'en passe etc</p>
 						<button type="button" data-toggle="modal" data-target="#infos" class="btn btn-warning">Lire la suite</button>
-						<div class="modal" id="infos">
-						  <div class="modal-dialog modal-lg">
-						    <div class="modal-content">
-						    	<img src="IMG1/1.jpg" alt="Image 1" class="card-img-top"/>
-						      <div class="modal-header">
-						        <h4 class="modal-title">Notre meilleur canapé</h4>
-						      </div>
-						      <div class="modal-body">
-					        « Pour vous faire mieux connaitre d’où vient l’erreur de ceux qui blâment la volupté, et qui louent en quelque sorte la douleur, je vais entrer dans une explication plus étendue, et vous faire voir tout ce qui a été dit là-dessus par l’inventeur de la vérité, et, pour ainsi dire, par l’architecte de la vie heureuse.
+							<div class="modal" id="infos">
+							  	<div class="modal-dialog modal-lg">
+							    	<div class="modal-content">
+								    	<img src="IMG1/1.jpg" alt="Image 1" class="card-img-top"/>
+								      	<div class="modal-header">
+								        <h4 class="modal-title">Notre meilleur canapé</h4>
+								      	</div>
+								      	<div class="modal-body">
+								        « Pour vous faire mieux connaitre d’où vient l’erreur de ceux qui blâment la volupté, et qui louent en quelque sorte la douleur, je vais entrer dans une explication plus étendue, et vous faire voir tout ce qui a été dit là-dessus par l’inventeur de la vérité, et, pour ainsi dire, par l’architecte de la vie heureuse.
 
-									Personne [dit Épicure] ne craint ni ne fuit la volupté en tant que volupté, mais en tant qu’elle attire de grandes douleurs à ceux qui ne savent pas en faire un usage modéré et raisonnable ; et personne n’aime ni ne recherche la douleur comme douleur, mais parce qu’il arrive quelquefois que, par le travail et par la peine, on parvienne à jouir d’une grande volupté. En effet, pour descendre jusqu’aux petites choses, qui de vous ne fait point quelque exercice pénible pour en retirer quelque sorte d’utilité ? Et qui pourrait justement blâmer, ou celui qui rechercherait une volupté qui ne pourrait être suivie de rien de fâcheux, ou celui qui éviterait une douleur dont il ne pourrait espérer aucun plaisir. »
-						      </div>
-						    </div>
-						  </div>
+										Personne [dit Épicure] ne craint ni ne fuit la volupté en tant que volupté, mais en tant qu’elle attire de grandes douleurs à ceux qui ne savent pas en faire un usage modéré et raisonnable ; et personne n’aime ni ne recherche la douleur comme douleur, mais parce qu’il arrive quelquefois que, par le travail et par la peine, on parvienne à jouir d’une grande volupté. En effet, pour descendre jusqu’aux petites choses, qui de vous ne fait point quelque exercice pénible pour en retirer quelque sorte d’utilité ? Et qui pourrait justement blâmer, ou celui qui rechercherait une volupté qui ne pourrait être suivie de rien de fâcheux, ou celui qui éviterait une douleur dont il ne pourrait espérer aucun plaisir. »
+									    </div>
+							    	</div>
+							  	</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card shadow">
+				<div class="col-md-3 col-sm-6">
+					<div class="card shadow mb-5">
 					<img src="IMG1/1.jpg" alt="Image 6" class="card-img-top">
-					<div class="card-body">
-						<h5 class="card-title">Image 6</h5>
-						<p class="card-text">Bla bla bla, j'en passe etc</p>
-						<button type="button" data-toggle="modal" data-target="#infos" class="btn btn-warning">Lire la suite</button>
-						<div class="modal" id="infos">
-					  	<div class="modal-dialog modal-lg">
-					    	<div class="modal-content">
-					    		<img src="IMG1/1.jpg" alt="Image 1" class="card-img-top"/>
-					      	<div class="modal-header">
-					        	<h4 class="modal-title">Notre meilleur canapé</h4>
-					      	</div>
-					      	<div class="modal-body">
-				  		  	« Pour vous faire mieux connaitre d’où vient l’erreur de ceux qui blâment la volupté, et qui louent en quelque sorte la 	douleur, je vais entrer dans une explication plus étendue, et vous faire voir tout ce qui a été dit là-dessus par l’inventeur de la vérité, et, pour ainsi dire, par l’architecte de la vie heureuse.
+						<div class="card-body">
+							<h5 class="card-title">Image 6</h5>
+							<p class="card-text">Bla bla bla, j'en passe etc</p>
+							<button type="button" data-toggle="modal" data-target="#infos" class="btn btn-warning">Lire la suite</button>
+							<div class="modal" id="infos">
+					  			<div class="modal-dialog modal-lg">
+					    			<div class="modal-content">
+					    			<img src="IMG1/1.jpg" alt="Image 1" class="card-img-top"/>
+					      				<div class="modal-header">
+					        			<h4 class="modal-title">Notre meilleur canapé</h4>
+					      				</div>
+				      					<div class="modal-body">
+				  		  				« Pour vous faire mieux connaitre d’où vient l’erreur de ceux qui blâment la volupté, et qui louent en quelque sorte la 	douleur, je vais entrer dans une explication plus étendue, et vous faire voir tout ce qui a été dit là-dessus par l’inventeur de la vérité, et, pour ainsi dire, par l’architecte de la vie heureuse.
 
-									Personne [dit Épicure] ne craint ni ne fuit la volupté en tant que volupté, mais en tant qu’elle attire de grandes douleurs à ceux qui ne savent pas en faire un usage modéré et raisonnable ; et personne n’aime ni ne recherche la douleur comme douleur, mais parce qu’il arrive quelquefois que, par le travail et par la peine, on parvienne à jouir d’une grande volupté. En effet, pour descendre jusqu’aux petites choses, qui de vous ne fait point quelque exercice pénible pour en retirer quelque sorte d’utilité ? Et qui pourrait justement blâmer, ou celui qui rechercherait une volupté qui ne pourrait être suivie de rien de fâcheux, ou celui qui éviterait une douleur dont il ne pourrait espérer aucun plaisir. »
-				      		</div>
-					    	</div>
-					  	</div>
+										Personne [dit Épicure] ne craint ni ne fuit la volupté en tant que volupté, mais en tant qu’elle attire de grandes douleurs à ceux qui ne savent pas en faire un usage modéré et raisonnable ; et personne n’aime ni ne recherche la douleur comme douleur, mais parce qu’il arrive quelquefois que, par le travail et par la peine, on parvienne à jouir d’une grande volupté. En effet, pour descendre jusqu’aux petites choses, qui de vous ne fait point quelque exercice pénible pour en retirer quelque sorte d’utilité ? Et qui pourrait justement blâmer, ou celui qui rechercherait une volupté qui ne pourrait être suivie de rien de fâcheux, ou celui qui éviterait une douleur dont il ne pourrait espérer aucun plaisir. »
+				      					</div>
+					    			</div>
+					  			</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card shadow">
+				<div class="col-md-3 col-sm-6">
+					<div class="card shadow mb-5">
 					<img src="IMG1/1.jpg" alt="Image 7" class="card-img-top">
-					<div class="card-body">
+						<div class="card-body">
 						<h5 class="card-title">Image 7</h5>
 						<p class="card-text">Bla bla bla, j'en passe etc</p>
 						<button type="button" data-toggle="modal" data-target="#infos" class="btn btn-warning">Lire la suite</button>
-						<div class="modal" id="infos">
-						  <div class="modal-dialog modal-lg">
-						    <div class="modal-content">
-						    	<img src="IMG1/1.jpg" alt="Image 1" class="card-img-top"/>
-						      <div class="modal-header">
-						        <h4 class="modal-title">Notre meilleur canapé</h4>
-						      </div>
-						      <div class="modal-body">
-				        	« Pour vous faire mieux connaitre d’où vient l’erreur de ceux qui blâment la volupté, et qui louent en quelque sorte la douleur, je vais entrer dans une explication plus étendue, et vous faire voir tout ce qui a été dit là-dessus par l’inventeur de la vérité, et, pour ainsi dire, par l’architecte de la vie heureuse.
+							<div class="modal" id="infos">
+								<div class="modal-dialog modal-lg">
+							    	<div class="modal-content">
+							    	<img src="IMG1/1.jpg" alt="Image 1" class="card-img-top"/>
+							      		<div class="modal-header">
+							        	<h4 class="modal-title">Notre meilleur canapé</h4>
+							      		</div>
+						      			<div class="modal-body">
+					        			« Pour vous faire mieux connaitre d’où vient l’erreur de ceux qui blâment la volupté, et qui louent en quelque sorte la douleur, je vais entrer dans une explication plus étendue, et vous faire voir tout ce qui a été dit là-dessus par l’inventeur de la vérité, et, pour ainsi dire, par l’architecte de la vie heureuse.
 
-									Personne [dit Épicure] ne craint ni ne fuit la volupté en tant que volupté, mais en tant qu’elle attire de grandes douleurs à ceux qui ne savent pas en faire un usage modéré et raisonnable ; et personne n’aime ni ne recherche la douleur comme douleur, mais parce qu’il arrive quelquefois que, par le travail et par la peine, on parvienne à jouir d’une grande volupté. En effet, pour descendre jusqu’aux petites choses, qui de vous ne fait point quelque exercice pénible pour en retirer quelque sorte d’utilité ? Et qui pourrait justement blâmer, ou celui qui rechercherait une volupté qui ne pourrait être suivie de rien de fâcheux, ou celui qui éviterait une douleur dont il ne pourrait espérer aucun plaisir. »
-						      </div>
-						    </div>
-						  </div>
+										Personne [dit Épicure] ne craint ni ne fuit la volupté en tant que volupté, mais en tant qu’elle attire de grandes douleurs à ceux qui ne savent pas en faire un usage modéré et raisonnable ; et personne n’aime ni ne recherche la douleur comme douleur, mais parce qu’il arrive quelquefois que, par le travail et par la peine, on parvienne à jouir d’une grande volupté. En effet, pour descendre jusqu’aux petites choses, qui de vous ne fait point quelque exercice pénible pour en retirer quelque sorte d’utilité ? Et qui pourrait justement blâmer, ou celui qui rechercherait une volupté qui ne pourrait être suivie de rien de fâcheux, ou celui qui éviterait une douleur dont il ne pourrait espérer aucun plaisir. »
+							      		</div>
+						    		</div>
+						  		</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card shadow">
+				<div class="col-md-3 col-sm-6">
+					<div class="card shadow mb-5">
 					<img src="IMG1/1.jpg" alt="Image 8" class="card-img-top">
 						<div class="card-body">
 						<h5 class="card-title">Image 8</h5>
 						<p class="card-text">Bla bla bla, j'en passe etc</p>
 						<button type="button" data-toggle="modal" data-target="#infos" class="btn btn-warning">Lire la suite</button>
 							<div class="modal" id="infos">
-					  		<div class="modal-dialog modal-lg">
-					    		<div class="modal-content">
+					  			<div class="modal-dialog modal-lg">
+					    			<div class="modal-content">
 					    			<img src="IMG1/1.jpg" alt="Image 1" class="card-img-top"/>
-					      		<div class="modal-header">
-					        	<h4 class="modal-title">Notre meilleur canapé</h4>
-					      		</div>
-					      		<div class="modal-body">
-					        	« Pour vous faire mieux connaitre d’où vient l’erreur de ceux qui blâment la volupté, et qui louent en quelque sorte la douleur, je vais entrer dans une explication plus étendue, et vous faire voir tout ce qui a été dit là-dessus par l’inventeur de la vérité, et, pour ainsi dire, par l’architecte de la vie heureuse.
+					      				<div class="modal-header">
+					        			<h4 class="modal-title">Notre meilleur canapé</h4>
+					      				</div>
+					      				<div class="modal-body">
+					        			« Pour vous faire mieux connaitre d’où vient l’erreur de ceux qui blâment la volupté, et qui louent en quelque sorte la douleur, je vais entrer dans une explication plus étendue, et vous faire voir tout ce qui a été dit là-dessus par l’inventeur de la vérité, et, pour ainsi dire, par l’architecte de la vie heureuse.
 
 										Personne [dit Épicure] ne craint ni ne fuit la volupté en tant que volupté, mais en tant qu’elle attire de grandes douleurs à ceux qui ne savent pas en faire un usage modéré et raisonnable ; et personne n’aime ni ne recherche la douleur comme douleur, mais parce qu’il arrive quelquefois que, par le travail et par la peine, on parvienne à jouir d’une grande volupté. En effet, pour descendre jusqu’aux petites choses, qui de vous ne fait point quelque exercice pénible pour en retirer quelque sorte d’utilité ? Et qui pourrait justement blâmer, ou celui qui rechercherait une volupté qui ne pourrait être suivie de rien de fâcheux, ou celui qui éviterait une douleur dont il ne pourrait espérer aucun plaisir. »
-					      		</div>
-					    		</div>
-					  		</div>
+					      				</div>
+					    			</div>
+					  			</div>
 							</div>
 						</div>
 					</div>
@@ -325,37 +328,37 @@
 				<div class="row">
 					<div class="col">
 						<h1 class="title">Notre Histoire</h1>
-						<hr class="w-100 separation"/>
+						<hr class="w-100 separation my-5"/>
 						<h2 class="under-title-text text-center mt-5 align-self-center">Longue descendance de menuisier Italien, la famille Picollino s'installe en France au début du XIXème siècle.</h2>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-4">
+					<div class="col-lg-4 text-center">
 						<div class="card mafia">
-							<img class="card-img-top rounded mx-auto" src="images/histoire/giorgio.jpg" alt="">
+							<img class="card-img-top rounded mx-auto" src="images/histoire/giorgio.jpg" alt="Giorgio Picollino">
 							<div class="card-body">
-								<h4 class="card-title">Giorgio</h4>
-								<p class="card-text">Le plus beau, le plus fort, le plus solide de tous, descendant d'une lignée familiale de génies avec comme atout particulier, son regard de braise qui ferait fuir n'importe quel Huissier de justice.</p>
+								<h4 class="card-title text-center">Giorgio</h4>
+								<p class="card-text text-center">Le plus beau, le plus fort, le plus solide de tous, descendant d'une lignée familiale de génies avec comme atout particulier, son regard de braise qui ferait fuir n'importe quel huissier de justice.</p>
 								<a class="btn btn-warning" id="boutonhistoire" href="mailto:giorgiomafioso@gmail.com" role="button">Lui envoyer un mail</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4 text-center">
 						<div class="card mafia">
-							<img class="card-img-top rounded mx-auto" src="images/histoire/luigi2.jpg" alt="">
+							<img class="card-img-top rounded mx-auto" src="images/histoire/luigi.jpg" alt="Luigi Picollino">
 							<div class="card-body">
-								<h4 class="card-title">Luigi</h4>
-								<p class="card-text">Le fils de Giorgio, prochain héritier de l'affaire familiale, il ne se laisse jamais impressionné de personne, même son père, ayant commencé à travailler avec lui du haut de ses 6 ans, on peut dire que c'est le petit prodige de l'entreprise.</p>
+								<h4 class="card-title text-center">Luigi</h4>
+								<p class="card-text text-center">Le fils de Giorgio, prochain héritier de l'affaire familiale, il ne se laisse jamais impressionner de personne, même son père, ayant commencé à travailler avec lui du haut de ses 6 ans, le prodige de l'entreprise.</p>
 								<a class="btn btn-warning" href="mailto:luigispaghetti@gmail.com" role="button">Lui envoyer un mail</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4 text-center">
 						<div class="card mafia">
-							<img class="card-img-top rounded mx-auto" src="images/histoire/giorgiojr.png" alt="">
+							<img class="card-img-top rounded mx-auto" src="images/histoire/giorgiojr.jpg" alt="Giorgio Jr. Picollino">
 							<div class="card-body">
-								<h4 class="card-title">Giorgio Jr.</h4>
-								<p class="card-text">Le chouchou de la boîte, mais surtout le nouveau cerveau de l'entreprise, depuis qu'il est revenu de son école de commerce, il a réussi à monter le chiffre d'affaire à plus de 200%, tous les employés sont à l'abri avec lui.</p>
+								<h4 class="card-title text-center">Giorgio Jr.</h4>
+								<p class="card-text text-center">Le chouchou de la boîte, mais surtout le nouveau cerveau de l'entreprise, depuis qu'il est revenu de son école de commerce, il a réussi à monter le chiffre d'affaire à plus de 200%, tous les employés sont à l'abri avec lui.</p>
 								<a class="btn btn-warning" href="mailto:grandmastergiorgiojr@gmail.com" role="button">Lui envoyer un mail</a>
 							</div>
 						</div>
@@ -363,135 +366,124 @@
 				</div>
 			</div>
 		</section>
-		<hr class="w-75 separation"/>
 		<!--Fin Histoire-->
 		<!--Origines-->
 		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="card">
-						<img src="images/histoire/atelier.jpg" alt="atelier" height="300" width="300"/>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="card bg-transparent">
-						<h4 class="title">Nos<br/>Infrastructures</h4>
-						<p class="text">Il paraît que si je tape du texte ici il va s'afficher correctement et tout le monde est content !<br/>
-						Il paraît que si je tape du texte ici il va s'afficher correctement et tout le monde est content !</p>
-					</div>
-				</div>
-				<hr class="w-75 separation"/>
-				<!--Fin Origines-->
-				<!--Infrastructures-->
-				<div class="row">
-					<div class="col-12">
-						<div class="card">
-							<img src="images/histoire/atelier.jpg" alt="atelier" height="300" width="300"/>
+			<hr class="w-100 separation my-5"/>
+			<div class="row mb-2">
+				<div class="col-md-8">
+					<div class="card bg-transparent flex-row mb-4">
+						<div class="card-body d-flex flex-column align-items-start">
+							<strong class="d-inline-block text-black">Nos<br/>Origines</strong>
+							<p class="card-text mb-auto texteinfrastructure">Nunc tristique aliquet tortor ut pretium. Nulla facilisi. Etiam id dolor est. Sed euismod tincidunt quam ut imperdiet. Praesent eu sem turpis. Cras vel odio vitae orci consectetur tempor. Integer blandit mi nibh, ut tempus augue posuere sed. Sed commodo rutrum est a tincidunt. Donec id urna eu tellus accumsan mattis. Suspendisse a massa sapien.</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-12">
-					<div class="card bg-transparent">
-						<h4 class="title">Nos<br/>Infrastructures</h4>
-						<p class="text">Il paraît que si je tape du texte ici il va s'afficher correctement et tout le monde est content !<br/>
-						Il paraît que si je tape du texte ici il va s'afficher correctement et tout le monde est content !</p>
+				<div class="col-md-4">
+				<img src="images/histoire/atelier.jpg" width="100%" class="d-inline-block"/>
+				</div>
+			</div>
+			<hr class="w-100 separation my-5"/>
+			<div class="row mb-2">
+				<div class="col-md-4">
+				<img src="images/histoire/atelier.jpg" width="100%" class="d-inline-block"/>
+				</div>
+				<div class="col-md-8">
+					<div class="card bg-transparent flex-row mb-4">
+						<div class="card-body d-flex flex-column align-items-start">
+						<strong class="d-inline-block text-black">Nos<br/>Infrastructures</strong>
+						<p class="card-text mb-auto texteinfrastructure">Nunc tristique aliquet tortor ut pretium. Nulla facilisi. Etiam id dolor est. Sed euismod tincidunt quam ut imperdiet. Praesent eu sem turpis. Cras vel odio vitae orci consectetur tempor. Integer blandit mi nibh, ut tempus augue posuere sed. Sed commodo rutrum est a tincidunt. Donec id urna eu tellus accumsan mattis. Suspendisse a massa sapien.</p>
+						</div>
 					</div>
 				</div>
 			</div>
+			<hr class="w-100 separation my-5"/>
 		</div>
-		<hr class="w-75 separation"/>
-
 		<!--Fin Infrastructure-->
 		<!--Accordéon-->
 		<div class="panel-group" id="accordeon" role="tablist" aria-multiselectable="true">
-	  	<div class="panel panel-default">
-		    <div class="panel-heading" role="tab" id="headingOne">
-		      <a role="button" data-toggle="collapse" data-parent="#accordeon" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-		      	<div class="row categorieaccordeon">
-	          	<h4 class="panel-title">
-	          	Notre Histoire
-	          	</h4>
+	  		<div class="panel panel-default">
+		    	<div class="panel-heading" role="tab" id="headingOne">
+		      	<a role="button" data-toggle="collapse" data-parent="#accordeon" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		      		<div class="row categorieaccordeon">
+	          		<h4 class="panel-title">Notre Histoire</h4>	          		
 			    	</div>
 			  	</a>
-			  </div>
-		    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-		      <div class="panel-body texteaccordeon">
-		     	Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-		      </div>
-		    </div>
-		  </div>
-		  <div class="panel panel-default">
-		    <div class="panel-heading" role="tab" id="headingTwo">
-		      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordeon" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-		      	<div class="row categorieaccordeon">
-
-	          	<h4 class="panel-title">
-	          	Notre savoir-faire
-	          	</h4>
-         		</div>
-          </a>
+			  	</div>
+		    	<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+		      		<div class="panel-body texteaccordeon">
+		     		Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		      		</div>
+		    	</div>
 		  	</div>
-		  </div>
-	    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-    	  <div class="panel-body texteaccordeon">
-	      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-	      </div>
-	    </div>
-	  	<div class="panel panel-default">
-	    	<div class="panel-heading" role="tab" id="headingThree">
-	      	<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordeon" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-	      		<div class="row categorieaccordeon">
-		        	<h4 class="panel-title">
-	          	Notre Charte qualité
-		        	</h4>
+		  	<div class="panel panel-default">
+		    	<div class="panel-heading" role="tab" id="headingTwo">
+		      	<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordeon" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+		      		<div class="row categorieaccordeon">
+
+	          		<h4 class="panel-title">Notre savoir-faire</h4>
+         			</div>
+          		</a>
+		  		</div>
+		  	</div>
+    		<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+    	  		<div class="panel-body texteaccordeon">
+	      		Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+	      		</div>
+	    	</div>
+	  		<div class="panel panel-default">
+	    		<div class="panel-heading" role="tab" id="headingThree">
+	      		<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordeon" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+	      			<div class="row categorieaccordeon">
+		        	<h4 class="panel-title">Notre Charte qualité</h4>
 			    	</div>
 		  		</a>
-	    	</div>
-	    	<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      		<div class="panel-body texteaccordeon">
-      		Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-	      	</div>
-	    	</div>
-	  	</div>
+	    		</div>
+	    		<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      				<div class="panel-body texteaccordeon">
+      				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+	      			</div>
+	    		</div>
+	  		</div>
 		</div>
-	</div>
 		<!--Fin Accordéon-->
 		<!--Footer-->
 		<footer id="footer" class="bg-white mt-5 mb-0">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row row-cols-1 row-cols-md-3 row-cols-sm-1">
 					<div class="col">
 						<div class="card h-100">
 						<!--Adresse entreprise-->
-							<a href="index.html">
-							<img class="align-center" src="images/logo/logo.jpg" width="300" height="100%" alt="">
+							<a class="text-center picologo" href="index.html">
+							<img class="text-center" src="images/logo/logo.jpg" width="275" height="100%" alt="Logo Picollino">
 							</a>
-							<div class="card-body">
-								<p class="card-text fs-4">
-								55, Rue de Vinciennes</p>
-								<p class="card-text fs-4">
+							<div class="card-body adresstext text-center">
+								<p class="card-text fs-4 text-center">
+								55, Rue de Vincennes</p>
+								<p class="card-text fs-4 text-center">
 								93100 Montreuil</p>
-								<a href="tel:0152486820" class="fs-4">Tél. : 0152486820
+								<a href="tel:0152486820" class="fs-4">Tél. : 01 52 48 68 20
 								</a>
 								<div class="row d-flex mt-5 justify-content-between">
-									<div class="col">
+									<div class="col footer-icons">
 										<a class="footer-icon" href="http://facebook.com">
-										<img src="images/reseaux/Facebook.png" alt="" width="32" height="32" target="_blank"/>
+										<img src="images/reseaux/Facebook.png" alt="" width="42" height="42" target="_blank" alt="Logo Facebook"/>
 										</a>
 										<a class="footer-icon" href="http://instagram.com">
-										<img src="images/reseaux/Instagram.png" alt="" width="32" height="32" target="_blank"/>
+										<img src="images/reseaux/Instagram.png" alt="" width="42" height="42" target="_blank" alt="Logo Instagram"/>
 										</a>
 										<a class="footer-icon" href="http://twitter.com">
-										<img src="images/reseaux/Twitter.png" alt="" width="32" height="32" target="_blank"/>
+										<img src="images/reseaux/Twitter.png" alt="" width="42" height="42" target="_blank" alt="Logo Twitter"/>
 										</a>
 										<a class="footer-icon" href="http://youtube.com">
-										<img src="images/reseaux/Youtube.png" alt="" width="32" height="32" target="_blank"/>
+										<img src="images/reseaux/Youtube.png" alt="" width="42" height="42" target="_blank" alt="Logo Youtube"/>
 										</a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+					<!--Fin Adresse entreprise-->
 					<!--Formulaire-->
 					<div class="col">
 						<div class="card h-100">
@@ -514,7 +506,7 @@
 										<label for="exempleInputMessage" class="form-label">Message</label>
 										<textarea class="form-control" id="exampleInputMessage" placeholder="Message" rows="3"></textarea>
 										</div>
-										<button type="submit" class="btn btn-warning">Envoyer</button>
+										<button type="submit" class="btn btn-warning submitbutton">Envoyer</button>
 									</form>
 								</div>
 							</div>
@@ -523,26 +515,27 @@
 						<div class="col">
 							<div class="card h-100">
 								<div class="card-body">
-									<h4 class="card-title text-center">Nous trouver</h4>
-									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.1938654970827!2d2.4338294152378284!3d48.85451347928702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d5f8bcaf5ff%3A0x1e2dad82b90c5e3b!2s55%20Rue%20de%20Vincennes%2C%2093100%20Montreuil!5e0!3m2!1sfr!2sfr!4v1607002450674!5m2!1sfr!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="map">
-									</iframe>
+								<h4 class="card-title text-center">Nous trouver</h4>
+									<div class="map-responsive">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.1938654970827!2d2.4338294152378284!3d48.85451347928702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d5f8bcaf5ff%3A0x1e2dad82b90c5e3b!2s55%20Rue%20de%20Vincennes%2C%2093100%20Montreuil!5e0!3m2!1sfr!2sfr!4v1607002450674!5m2!1sfr!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="map">
+										</iframe>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<p class="text-center">
-							Mentions Légales . copyright &#169; 2020</p>
-						</div>
+					<div class="row h-100 justify-content-center align-items-center">
+						<span class="text-muted legalmentions">
+							Mentions Légales . copyright &#169; 2020</span>
 					</div>
-				</footer>
-							<!--Fin Adresse entreprise-->
+				</div>
+			</footer>
 			<!--Fin Footer-->
 
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	</body>
 
 
